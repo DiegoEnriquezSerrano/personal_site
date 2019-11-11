@@ -1,6 +1,5 @@
 
 <style type="text/css">
-    /*------artShow------*/
     
     #artShow {
       border: 0px solid red;
@@ -87,9 +86,7 @@
     .imageBox.active {
         opacity: 1.0;
     }
-    
-    
-    /*------/artShow------*/
+
 </style>
 
 <div id="artShow">
@@ -105,7 +102,7 @@
 </div><!--artShow-->
 
 <script>
-//------START ARTSHOW---------
+
 const artshow = {
   reg: [
   "https://lastcalldesigns.com/images/sea-por/2018.04.15.Teneriffe.Falls.Trail.11.23.21.jpg",

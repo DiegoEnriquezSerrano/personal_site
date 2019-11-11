@@ -221,7 +221,6 @@ nav.navbar a:hover,
 }
 
 nav.navbar button,
-#loginModal button,
 #searchForm input[type=text] {
     display: inline-block;
     padding: 5px 10px;
@@ -251,40 +250,11 @@ nav.navbar button,
     border-left: 1px solid grey;
 }
 
-#loginModalButtonHolder {
-    justify-self: center;
-}
-
-#loginModalButton {
-    position: relative;
-    display: flex;
-    max-width: 115px;
-    background-color: var(--beige);
-    background-image: linear-gradient(to top right, rgb(214,214,214), rgb(255,255,255));
-    border: 1px solid rgb(244,244,244);
-    color: var(--navy);
-    box-shadow: -2px 2px 5px -3px rgb(30,30,30);
-}
-
-#loginModalButton:active {
-    box-shadow: 0px 1px 5px -3px rgb(30,30,30);
-    margin-top: 2px;
-}
-
-#loginModalButton:focus {
-    outline: 0;
-}
-
 #searchForm input[type=text]:active,
 #searchForm input[type=text]:focus {
     width: 230px;
     outline: 0;
 }
-
-#toggleLogin {
-    padding: 5px 10px;
-}
-
 
 .navbar-toggler {
     display: none! important;
