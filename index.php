@@ -2,29 +2,29 @@
 
     include("functions.php");
 
-    include("views/header.php");
+    include("views/header.html");
 
     if(isset($_GET['page'])){
 
         if ($_GET['page'] == 'home') {
 
-            include("views/home.php");
+            include("views/home.html");
 
         } else if ($_GET['page'] == 'drumming') {
 
-            include("views/drumming.php");
+            include("views/drumming.html");
 
         } else if ($_GET['page'] == 'column') {
 
-            include("views/column.php");
+            include("views/column.html");
 
         } else if ($_GET['page'] == 'art') {
 
-            include("views/art.php");
+            include("views/art.html");
 
         } else if ($_GET['page'] == 'photos') {
 
-            include("views/photos.php"); 
+            include("views/photos.html"); 
 
         } else if ($_GET['page'] == 'search') {
 
@@ -34,10 +34,10 @@
 
     }else {
 
-        include("views/home.php");
+        include("views/home.html");
 
     }
 
-    include("views/footer.php");
+    include("views/footer.html");
 
 ?>
