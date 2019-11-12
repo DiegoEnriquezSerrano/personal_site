@@ -1,0 +1,154 @@
+#theBigOne {
+  background-color: rgb(35,35,35);
+  padding-top: 1em;
+  z-index: 4;
+  margin-top: 0em;
+  box-shadow: inset 0px 1px 15px -4px rgb(5,5,5);
+  padding-bottom: 1em;
+}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  padding: 0 0px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.tubeGrid {
+  display: flex;
+  border: 0;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.tubeHolder {
+    border: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    width: 100%;
+}
+
+.tube {
+    width: 100%;
+    box-shadow: 0 0 7px rgb(0,0,0);
+    max-width: 70vw;
+    border: 0;
+}
+
+.text {
+  color: rgb(250,250,250);
+  text-shadow: 1px 1px 1px rgb(0,0,0);
+  background: rgba(255,255,255,0.0); 
+  font-size: 1.2em;
+  padding: 0px 8px;
+  max-width: 800px;
+  text-align: left;
+  border: 0;
+  font-family: 'Arial';
+  margin-top: 0px;
+  flex-shrink: 3;
+}
+
+.text span {
+  padding: 8px 8px;
+  box-shadow: 0 0 7px rgba(0,0,0,0.0);
+}
+
+.text h2 {
+  padding-bottom: 5px;
+  text-shadow: 1px 1px 1px rgb(0,0,0);
+  font-family: nativeFont_01;
+  font-size: 2.0em;
+}
+
+.text p {
+  padding: 5px;
+}
+
+.text p:last-child {
+  padding-bottom: 0;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 1.3em;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  color: var(--main-font-color);
+  text-shadow: var(--mini-text-shadow);
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: 0.2s ease;
+  border-radius: 0 10px 10px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+.prev:hover, .next:hover {
+  color: var(--main-font-color);
+  text-shadow: var(--sec-text-shadow);
+}
+
+.dot {
+  cursor: pointer;
+  height: 1.5em;
+  width: 1.5em;
+  margin: 0 0px;
+  background: transparent;
+  border-radius: 3px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  color: var(--main-font-color);
+  text-shadow: var(--mini-text-shadow);
+  font-family: nativeFont_01;
+  font-size: 1.3em;
+  border-width: 0;
+}
+
+#carouselControls ::selection {
+  background: transparent;
+  outline: transparent
+}
+
+.active, .dot:hover {
+  /*background-color: rgb(85,40,40);*/
+  color: var(--sec-font-color);
+  text-shadow: var(--sec-text-shadow);
+}
+
+.active {
+  background-color: rgb(85,40,40);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
